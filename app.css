@@ -1,0 +1,49 @@
+:root {
+  --mc-buttonColor: #4cc638;
+  --mc-buttonColor-o0: #4cc63854;
+}
+input {
+  outline: none;
+}
+.btn {
+  background: linear-gradient(180deg, #00b300 0%, #19b80b 100%);
+  color: #0c5705;
+  font-weight: 600;
+}
+.btn-pulse {
+  animation: buttonPulse 16s infinite cubic-bezier(0.7, 0, 0, 1);
+}
+.btn:hover {
+  background: linear-gradient(180deg, #00c000 0%, #1ccd0d 100%);
+  cursor: pointer;
+}
+@keyframes buttonPulse {
+  0%,
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    box-shadow: 0 0 0 0 var(--mc-buttonColor);
+  }
+  9.99%,
+  19.99%,
+  29.99%,
+  39.99%,
+  49.99%,
+  59.99%,
+  69.99%,
+  79.99%,
+  89.99%,
+  99.99% {
+    box-shadow: 0 0 0 5px var(--mc-buttonColor-o0);
+  }
+}
+.balance {
+  font-weight: 600;
+}
