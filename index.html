@@ -131,7 +131,7 @@
                         </div>
                     </div>
                     <div class="w-full h-full px-[20px] py-[15px]">
-                        <div class="grid grid-cols-5 gap-5 cursor-pointer max-xl:grid-cols-4 max-lg:grid-cols-3 max-sm:grid-cols-2">
+                        <div class="grid grid-cols-5 gap-5 cursor-pointer max-xl:grid-cols-4 max-lg:grid-cols-3 max-sm:grid-cols-2 max-[380px]:grid-cols-1">
                             <div v-for="key in 28" class="relative group">
                                 <div class="relative">
                                     <img src="https://api-prod.casher3.win/storage/PragmaticPlay/70b4d615e17f49a78986cb07b284b3ed.png"
@@ -211,6 +211,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="fixed hidden max-lg:flex bg-[#121b28] bottom-0 w-full flex px-[10px] border border-t-[#6d8bb72b]">
+                                        <div class="bg-[#121b28] cursor-pointer rounded-[10px] font-[500] m-auto py-[10px]"
+                                            :class="{'flex justify-center items-center !px-[15px] !py-[12px]':!menu}" v-for="key in menuMobileItem">
+                                            <img :src="key.icon" alt="" class="w-[24px] m-auto">
+                                            <span class="text-[12px]" v-if="menu">{{key.title}}</span>
+                                        </div>
         </div>
     </div>
     </div>
