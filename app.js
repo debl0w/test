@@ -16,6 +16,22 @@ const app = new Vue({
             },{
                 title:'Турниры',
                 icon: 'winner.svg'
+            }],
+            menuMobileItem: [{
+                title: 'Слоты',
+                icon: 'slot.svg'
+            },{
+                title:'Партнерам',
+                icon: 'partner.svg'
+            },{
+                title:'Бонусы',
+                icon: 'cash.svg'
+            },{
+                title:'Турниры',
+                icon: 'winner.svg'
+            },{
+                title:'Еще',
+                icon: 'burger.svg'
             }]
         }
     }
